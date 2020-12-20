@@ -8,8 +8,8 @@
 ## Comandos Iniciais
 
 - todos os comandos do JS deve ser rodado dentro da tag **<script>**
-- a tag **<script>** deve ficar dentro da tag <body>
-- JS não mais exige **';'** no final para fechar o comando
+- a tag **<script>** deve ficar dentro da tag body
+- JS não mais exige **';'** no final para fechar o comando  
 - abrir uma janela de alerta:
 
 ```jsx
