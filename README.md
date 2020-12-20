@@ -8,7 +8,7 @@
 ## Comandos Iniciais
 
 - todos os comandos do JS deve ser rodado dentro da tag **<script>**
-- a tag **<script>** deve ficar dentro da tag **<body>**
+- a tag **<script>** deve ficar dentro da tag <body>
 - JS não mais exige **';'** no final para fechar o comando
 - abrir uma janela de alerta:
 
@@ -16,13 +16,13 @@
 window.alert('mensagem')
 ```
 
-- abre uma janela de confirmação:
+- abrir uma janela de confirmação:
 
 ```jsx
 window.confirm('mensagem')
 ```
 
-- abre uma janela de input:
+- abrir uma janela de input:
 
 ```jsx
 window.prompt('Qual é seu nome?')
