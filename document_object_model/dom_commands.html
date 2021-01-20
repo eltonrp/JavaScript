@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p, h1 {
+      color: gray;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Olá Mundo!</h1>
+  <h2>Olá Novamente!</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est exercitationem quae aliquid, deleniti mollitia, consequatur sunt velit accusantium, provident fugiat animi voluptate itaque neque reprehenderit. Doloremque cumque numquam minus?</p>
+
+  <script>
+    var corpo = window.document.body
+    corpo.style.background = 'blue'
+    var x = window.document.getElementsByTagName('h1')[0]
+    x.style.color = 'green'
+    window.alert('Olá Mundo: ' + x.innerText)
+    window.document.writeln(document.charset)
+    window.document.writeln(navigator.appName)
+    document.writeln(document.URL)
+
+  </script> 
+</body>
+</html>
