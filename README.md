@@ -4,8 +4,8 @@
 
 ### Pasta Raíz
 
-Exercício de manipulação do DOM
-Criação de elementos e estilização usando apenas Javascript
+Exercício de manipulação do DOM  
+Criação de elementos e estilização usando apenas Javascript  
 Adicione e remova itens usando os botões
 
 ---
