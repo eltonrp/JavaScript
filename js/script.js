@@ -37,7 +37,7 @@ const addNewItem = () => {
 }
 const remLastItem = () => {
   let paragraphs = document.getElementsByTagName('p')
-  if(paragraphs){
+  if(paragraphs.length > 0){
     body.lastChild.remove()
   }
 }
