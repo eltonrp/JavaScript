@@ -2,12 +2,16 @@
 
 ## Aprendendo Conceitos Básicos de JavaScript
 
-As pastas estão numeradas na sequência dos estudos, com os códigos dos exercícios praticados.  
+### Pasta Raíz
 
-Na pasta roteiro de estudos estão os materiais pdf numerados na mesma sequência, referente a cada exercício prático.
+Exercício de manipulação do DOM
+Criação de elementos e estilização usando apenas Javascript
+Adicione e remova itens usando os botões
 
-Conforme for avançando nos estudos, o material será atualizado.
+---
 
-Bons Estudos!
+### Pasta fundamentos
+
+Exercícios introdutórios de Javascript
 
 ---
