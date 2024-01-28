@@ -50,29 +50,38 @@ btnAdd = appendElement(btnAdd, div)
 btnRem = appendElement(btnRem, div)
 
 // Funções de adicionar e remover elementos
-const addNewItem = () => {
-  let divDb = createElement('div')
-  divDb.id = 'obj-content'
-  body.appendChild(divDb)
 
-  for(obj of newList){
-    for(item in obj){
-      let pDb = createElement('p')
-      pDb.textContent = `${item}: ${obj[item]}`
-      divDb.appendChild(pDb)
+// Variável mostra se existe a div
+let hasDivDb = false
+
+const addNewItem = () => {
+  if(!hasDivDb) {
+    let divDb = createElement('div')
+    divDb.id = 'obj-content'
+    body.appendChild(divDb)
+  
+    for(obj of newList){
+      for(item in obj){
+        let pDb = createElement('p')
+        pDb.textContent = `${item}: ${obj[item]}`
+        divDb.appendChild(pDb)
+      }
+      let p = createElement('p')
+      p = textContent(p, '-------------------------')
+      p = appendElement(p, divDb)
     }
-    let p = createElement('p')
-    p = textContent(p, '-------------------------')
-    p = appendElement(p, divDb)
+    hasDivDb = true
   }
 }
 
 const remLastItem = () => {
-  let itemToRemove = document.getElementById('obj-content')
-  if(itemToRemove){
+  if(hasDivDb){
+    let itemToRemove = document.getElementById('obj-content')
     itemToRemove.remove()
+    hasDivDb = false
   }
 }
+
 // Adicionando funções aos botões
 btnAdd.onclick = addNewItem
 btnRem.onclick = remLastItem
