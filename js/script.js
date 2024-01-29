@@ -13,6 +13,11 @@ let appendElement = (elem, parentElem=body) => {
   return parentElem.appendChild(elem)
 }
 
+let styleElement = (styleClass, styleAtr, elem=body) => {
+  elem.style[styleClass] = styleAtr
+  return elem
+}
+
 // Criando Elementos
 let body = document.body
 
@@ -23,31 +28,31 @@ let btnAdd = createElement('button')
 let btnRem = createElement('button')
 
 // Estilizando o body
-body.style.backgroundColor = '#282A36'
-body.style.color = 'white'
-body.style.display = 'flex'
-body.style.justifyContent = 'center'
-body.style.alignItems = 'center'
-body.style.padding = '2rem'
-body.style.flexDirection = 'column'
-body.style.gap = '1rem'
+styleElement('backgroundColor', '#282A36')
+styleElement('color', 'white')
+styleElement('display', 'flex')
+styleElement('justifyContent', 'center')
+styleElement('alignItems', 'center')
+styleElement('padding', '2rem')
+styleElement('flexDirection', 'column')
+styleElement('gap', '1rem')
 
 // Estilizando a div
-div.style.display = 'flex'
-div.style.gap = '1rem'
+styleElement('display', 'flex', div)
+styleElement('gap', '1rem', div)
 
 // Criando contexto dos elementos
-title = textContent(title, 'Criando Elementos com DOM')
-span = textContent(span, 'Todos os elementos foram criados e estilizados unicamente com Javascript. Adicione e Remova elementos com os Botões abaixo')
-btnAdd = textContent(btnAdd,'Mostrar')
-btnRem = textContent(btnRem, 'Remover')
+textContent(title, 'Criando Elementos com DOM')
+textContent(span, 'Todos os elementos foram criados e estilizados unicamente com Javascript. Adicione e Remova elementos com os Botões abaixo')
+textContent(btnAdd,'Mostrar')
+textContent(btnRem, 'Remover')
 
 // Adicionando Elementos ao DOM
-title = appendElement(title)
-span = appendElement(span)
-div = appendElement(div)
-btnAdd = appendElement(btnAdd, div)
-btnRem = appendElement(btnRem, div)
+appendElement(title)
+appendElement(span)
+appendElement(div)
+appendElement(btnAdd, div)
+appendElement(btnRem, div)
 
 // Funções de adicionar e remover elementos
 
